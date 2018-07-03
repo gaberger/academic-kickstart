@@ -596,7 +596,7 @@ The grammar used in this demo is just a subset of a very extensive set of instru
 
 In a follow up post, I will go into the details of `nparser` including:
 
-1. Using dicClojure as a systems language for automation
+1. Using Clojure as a systems language for automation
 2. Leveraging functional programming to write concise code
 3. Leveraging Clojure powerful specification language to build validation
 4. Leverage Clojure spec generators for doing property testing
