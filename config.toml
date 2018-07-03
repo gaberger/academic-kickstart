@@ -33,6 +33,9 @@ defaultContentLanguageInSubdir = false
 # Get last modified date for content from Git?
 enableGitInfo = true
 
+[permalinks]
+  post = "/:year/:month/:title/"
+
 [outputs]
   home = [ "HTML", "CSS", "RSS" ]
   section = [ "HTML", "RSS" ]
@@ -198,6 +201,10 @@ enableGitInfo = true
     icon_pack = "fa"
     link = "//github.com/gaberger"
 
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin/in/gaberger"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
