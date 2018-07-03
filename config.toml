@@ -51,7 +51,7 @@ enableGitInfo = true
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
-  font = "playfair"
+  font = "default"
 
   # Your details.
   name = "Gary Berger"
