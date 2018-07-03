@@ -1,7 +1,6 @@
 +++
 title = "Parsing Network Configurations With Clojure"
-date = 2018-06-30T15:40:47-04:00
-draft = true
+draft = false
 tags = ["netops", "clojure", "automation"]
 categories = ["network automation"]
 
