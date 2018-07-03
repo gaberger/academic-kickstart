@@ -582,11 +582,21 @@ exit-vnc
 line vty
 ```
 
+### Summary
+
+The configuration syntax is in and of itself a very valuable language for describing the runtime configuration of a device. Operators, engineers and architects are extremely familiar with this language and often leverage it for designing and troubleshooting their environments. By formally defining a grammar for the configuration we can transform and manipulate it with a vast amount of tools and programming languages. This technique is used in various projects and processes and I hope to demonstrate how leveraging Clojure makes this easier and more consumable for network operators to leverage.
+
+
+### Caveat
+
+The grammar used in this demo is just a subset of a very extensive set of instructions used by `frr`. The techniques used by `nparser` are easily extendable to various use-cases and configuration dialects.
+
+
 ### Wrapup
 
 In a follow up post, I will go into the details of `nparser` including:
 
-1. Using Clojure as a systems language for automation
+1. Using dicClojure as a systems language for automation
 2. Leveraging functional programming to write concise code
 3. Leveraging Clojure powerful specification language to build validation
 4. Leverage Clojure spec generators for doing property testing
