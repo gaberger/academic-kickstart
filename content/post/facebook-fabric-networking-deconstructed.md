@@ -113,9 +113,9 @@ Now that we have $R$,  we can solve for the other unknowns
 
 | Equation                                      |           Result |
 | --------------------------------------------- | ---------------: |
-| $$TotalCores = R^{L-1}/2$$                    |                2 |
-| $$TotalSwitches = (2L -1) \* (R/2)^{L-1}$$    |                6 |
-| $$TotalPorts = R \* TotalSwitches$$           |               24 |
+| $TotalCores = R^{L-1}/2$                      |                2 |
+| $TotalSwitches = (2L -1) \* (R/2)^{L-1}$      |                6 |
+| $TotalPorts = R \* TotalSwitches$             |               24 |
 
 The min-cut of this network would be $P/2$ or 4 the over subscription rate can be calculated as $(P/2)/mincut = 1$ or non-blocking
 
