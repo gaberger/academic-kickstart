@@ -1,6 +1,6 @@
 +++
 title = "Facebook Fabric Networking Deconstructed"
-draft = true
+draft = false 
 date = "2014-11-14"
 tags = ["datacenter","networking"]
 math = true
