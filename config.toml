@@ -246,3 +246,8 @@ enableGitInfo = true
 # Configure the English version of the website.
 [Languages.en]
   languageCode = "en-us"
+
+[imaging]
+resampleFilter = "box"
+quality = 75
+anchor = "smart"
