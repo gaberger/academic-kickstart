@@ -57,14 +57,14 @@ All of these can be assessed by deconstructing the protocol information into a u
 
 For goals 1-2 above we need a comparator to evaluate the output R' and the estimated R^' to calculate the difference of the two sets. The model for such a system is depicted below. The implementation splices off the inputs to the Router and copy them into a _shadow router_. The _shadow router_ leverages a BPF HASH table located in kernel memory. The evaluator can then run on a scheduled interval and perform the necessary calculations.
 
-<center> ![](/B2F1DD9D-F263-495C-92D6-52333FDC4FD6.png) </center>
+<center style="background-color:white"> ![](/img/B2F1DD9D-F263-495C-92D6-52333FDC4FD6.png) </center>
 
 
 
 We find goals 3-5 to be simpler since we do not have to implement a comparator but simply collect information from the routing protocol to perform an evaluation on. The model for this is depicted below. We again splice off the input to the Router and copy them to the _shadow router_. We de-structure the protocol data into a set of fields and insert them into the BPF hash table. This is the fundamental design for an implementation we call _**RouteWatch**_  
  
 
-<center> ![](/575E2378-762B-4B65-893C-8B0FD45F035B.png) </center>
+<center style="background-color:white"> ![](/img/575E2378-762B-4B65-893C-8B0FD45F035B.png) </center>
 
 ## Introducing RouteWatch
 
@@ -104,7 +104,7 @@ In summary, BPF provides an in-kernel JIT-ed virtual machine that allows you to 
 
 We decided to use the [IOVisor BCC](https://github.com/iovisor/bcc) toolchain so we could leverage the Python native bindings to libbcc and allow python to handle the loading and interaction with the in-kernel hash table. 
 
-<center> ![](/C2E279A6-A63C-49B7-A1EF-529B8B492429.png) </center>
+<center style="background-color:white"> ![](/img/C2E279A6-A63C-49B7-A1EF-529B8B492429.png) </center>
  
 
 #### Lets look at the BPF Program 
